@@ -175,6 +175,13 @@ Me chamo Bruno Duarte Silveira, tenho 22 anos e sou natural de Minas Gerais. Atu
 
 </p>
 
+<div align="left">
+    <img 
+        alt="Pokemon"
+        height"10"
+        src="assets/pokemon/006-Gmax.png"
+    />
+</div>
 
 <div align="center">
   <picture>
