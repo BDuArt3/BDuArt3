@@ -47,11 +47,6 @@ Me chamo Bruno, tenho 22 anos e sou natural de Minas Gerais. Atualmente, estou c
 
 ### 📊 Estatísticas
 
-
-<p align="left">
-  <img height="200" src="https://github-readme-stats-git-master-anuraghazra.vercel.app/api?username=BDuArt3&show_icons=true&theme=tokyonight&include_all_commits=true&locale=pt-br" />
-  <img height="200" src="https://github-readme-stats-git-master-anuraghazra.vercel.app/api/top-langs/?username=BDuArt3&theme=tokyonight&layout=compact&custom_title=Tecnologias&langs_count=9" />
-</p>
 ---
 
 <div align="center">
