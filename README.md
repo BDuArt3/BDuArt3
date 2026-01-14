@@ -64,15 +64,7 @@ Me chamo Bruno, tenho 22 anos e sou natural de Minas Gerais. Atualmente, estou c
 
 </p>
 
-<div align="left">
-    <img 
-        align="left"
-        alt="Pokemon"
-        height"10"
-        width="300"
-        src="assets/pokemon/006-Gmax.png"
-    />
-</div>
+
 
 <div align="center">
   <picture>
