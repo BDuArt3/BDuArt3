@@ -1,13 +1,12 @@
-# 👩🏻‍💻 Bruno Duarte
+# Bruno Duarte Silveira
 
 **`Desenvolvedor Backend`**
 
-Me chamo Bruno Duarte Silveira, tenho 22 anos e sou natural de Minas Gerais. Atualmente, estou cursando Sistemas de Informação na UNIPAM.
+Me chamo Bruno, tenho 22 anos e sou natural de Minas Gerais. Atualmente, estou cursando Sistemas de Informação na UNIPAM.
 
 ---
 
-### 🤖 Linguagens e Tecnologias
-
+### Linguagens e Tecnologias
 
 <img 
     align="left" 
@@ -21,6 +20,14 @@ Me chamo Bruno Duarte Silveira, tenho 22 anos e sou natural de Minas Gerais. Atu
     align="left" 
     alt="Python" 
     title="Python"
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="C#" 
+    title="C#"
     width="30px" 
     style="padding-right: 10px;" 
     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" 
