@@ -42,12 +42,7 @@ Me chamo Bruno, tenho 22 anos e sou natural de Minas Gerais. Atualmente, estou c
 />
 
 <br/>
-<br/>
----
 
-### 📊 Estatísticas
-
----
 
 <div align="center">
   <picture>
