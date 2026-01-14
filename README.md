@@ -43,25 +43,15 @@ Me chamo Bruno, tenho 22 anos e sou natural de Minas Gerais. Atualmente, estou c
 
 <br/>
 <br/>
-
-### 📊 Estatísticas
+---
 
 ### 📊 Estatísticas
 
 <p align="left">
-  <img 
-    alt="GitHub Stats" 
-    height="200" 
-    src="https://github-readme-stats.vercel.app/api?username=BDuArt3&show_icons=true&theme=tokyonight&include_all_commits=true&locale=pt-br" 
-  />
-  <img 
-    alt="Top Langs" 
-    height="200" 
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=BDuArt3&theme=tokyonight&layout=compact&custom_title=Tecnologias&langs_count=9" 
-  />
+  <img height="200" src="https://github-readme-stats.vercel.app/api?username=BDuArt3&show_icons=true&theme=tokyonight&include_all_commits=true&locale=pt-br" />
+  <img height="200" src="https://github-readme-stats.vercel.app/api/top-langs/?username=BDuArt3&theme=tokyonight&layout=compact&custom_title=Tecnologias&langs_count=9" />
 </p>
-
-
+---
 
 <div align="center">
   <picture>
