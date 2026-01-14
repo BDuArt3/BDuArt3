@@ -32,6 +32,14 @@ Me chamo Bruno, tenho 22 anos e sou natural de Minas Gerais. Atualmente, estou c
     style="padding-right: 10px;" 
     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
 />
+<img 
+    align="left" 
+    alt="" 
+    title=""
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cosmosdb/cosmosdb-plain-wordmark.svg"
+/>
 
 <br/>
 <br/>
