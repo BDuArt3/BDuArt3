@@ -2,7 +2,7 @@
 
 **`Desenvolvedor Backend`**
 
-Me chamo Bruno, tenho 22 anos e sou natural de Minas Gerais. Atualmente, estou cursando Sistemas de Informação na UNIPAM.
+Me chamo Bruno, tenho 23 anos e sou natural de Minas Gerais. Atualmente, estou cursando Sistemas de Informação na UNIPAM.
 
 ---
 
