@@ -10,20 +10,67 @@ permissions:
 
 jobs:
   update-readme:
-    name: Update README with WakaTime stats
+    name: Update README with WakaTime languages
     runs-on: ubuntu-latest
 
     steps:
-      - uses: anmol098/waka-readme-stats@master
-        with:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch WakaTime stats
+        id: wakatime
+        env:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          SHOW_TIMEZONE: "True"
-          SHOW_OS: "False"
-          SHOW_PROJECTS: "False"
-          SHOW_LOC_CHART: "False"
-          SHOW_PROFILE_VIEWS: "False"
-          SHOW_LINES_OF_CODE: "False"
-          SHOW_LANGUAGE_PER_REPO: "False"
-          SHOW_UPDATED_DATE: "True"
-          UPDATED_DATE_FORMAT: "%d/%m/%Y %H:%M:%S"
+        run: |
+          response=$(curl -fsSL -u "${WAKATIME_API_KEY}:" "https://wakatime.com/api/v1/users/current/stats/last_7_days")
+
+          mapfile -t rows < <(printf '%s' "$response" | jq -r '
+            .data.languages[0:5][]
+            | "\(.name)|\(.text)|\(.percent)"
+          ')
+
+          {
+            echo 'content<<EOF'
+            echo '```text'
+            if [ ${#rows[@]} -eq 0 ]; then
+              echo 'Sem atividade rastreada nesta semana.'
+            else
+              for row in "${rows[@]}"; do
+                IFS='|' read -r name duration percent <<< "$row"
+                printf '%-14s %12s   %6s%%\n' "$name" "$duration" "$percent"
+              done
+            fi
+            echo '```'
+            echo 'EOF'
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Update README section
+        env:
+          WAKA_CONTENT: ${{ steps.wakatime.outputs.content }}
+        run: |
+          python <<'PY'
+          from pathlib import Path
+          import os
+          import re
+
+          readme = Path("README.md")
+          text = readme.read_text(encoding="utf-8")
+          start = "<!--START_SECTION:waka-->"
+          end = "<!--END_SECTION:waka-->"
+          replacement = f"{start}\n{os.environ['WAKA_CONTENT']}\n{end}"
+          updated = re.sub(
+              rf"{re.escape(start)}.*?{re.escape(end)}",
+              replacement,
+              text,
+              flags=re.S,
+          )
+          readme.write_text(updated, encoding="utf-8")
+          PY
+
+      - name: Commit README changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --cached --quiet || git commit -m "Update WakaTime stats"
+          git push
