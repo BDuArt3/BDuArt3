@@ -52,4 +52,7 @@ Me chamo Bruno, tenho 23 anos e sou natural de Minas Gerais. Atualmente, estou c
 </div>
 
 
-<img width="420em" src="https://github-readme-stats.vercel.app/api/wakatime?username=BDuArt3&layout=compact&theme=bear" alt="wakatime"/>
+### WakaTime
+
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
