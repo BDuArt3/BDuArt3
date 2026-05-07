@@ -50,3 +50,6 @@ Me chamo Bruno, tenho 23 anos e sou natural de Minas Gerais. Atualmente, estou c
     <img alt="Snake animation" src="https://github.com/BDuArt3/BDuArt3/blob/output/github-contribution-grid-snake.svg">
   </picture>
 </div>
+
+
+<img width="420em" src="https://github-readme-stats.vercel.app/api/wakatime?username=BDuArt3&layout=compact&theme=bear" alt="wakatime"/>
