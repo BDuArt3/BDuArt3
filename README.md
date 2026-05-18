@@ -58,7 +58,6 @@ Linguagens mais usadas nos últimos 7 dias.
 
 <!--START_SECTION:waka-->
 ```text
-Markdown            15 mins    69.28%
-YAML                 6 mins    30.72%
+Sem atividade rastreada nesta semana.
 ```
 <!--END_SECTION:waka-->
