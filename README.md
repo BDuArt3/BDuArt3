@@ -58,6 +58,6 @@ Linguagens mais usadas nos últimos 7 dias.
 
 <!--START_SECTION:waka-->
 ```text
-PHP                  8 mins    100.0%
+Sem atividade rastreada nesta semana.
 ```
 <!--END_SECTION:waka-->
